@@ -1,0 +1,31 @@
+{
+  "connection": {
+    "authType": "Basic", 
+    "authHeader": "Authorization",
+    "authTokenType": "Basic",
+    "userName": "${connection.userName}",
+    "password": "${connection.password}",
+    "url": "https://api.example.com"
+  },
+  "accountParams": {
+    "listAccounts": {
+      "url": "/users",
+      "httpMethod": "GET",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "pagination": {
+        "pageParam": "page",
+        "pageSizeParam": "limit",
+        "pageSize": 100
+      },
+      "responsePath": "$.data[*]",
+      "responseKeyAttribute": "id",
+      "responseDisplayAttribute": "username"
+    }
+  },
+  "createAccount": {
+    "url": "/users",
+    "httpMethod": "POST",
+    "headers": {
+      "Content-T
