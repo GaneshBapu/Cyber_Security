@@ -23,9 +23,4 @@
       "responseKeyAttribute": "id",
       "responseDisplayAttribute": "username"
     }
-  },
-  "createAccount": {
-    "url": "/users",
-    "httpMethod": "POST",
-    "headers": {
-      "Content-T
+  }
